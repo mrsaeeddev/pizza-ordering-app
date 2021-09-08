@@ -8,8 +8,6 @@ function OrderPizza() {
   const [crust, setCrust] = useState('');
   const [flavor, setFlavor] = useState('');
   const [size, setSize] = useState('');
-  const [orders, setOrders] = useState([]);
-
 
   const onChangeCrust = (event) => {
     setCrust(event.target.value);

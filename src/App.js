@@ -9,6 +9,7 @@ import { useHistory } from "react-router-dom";
 import Main from './components/Main/Main';
 import './App.css';
 import OrderPizza from './components/OrderPizza/OrderPizza';
+import CancelOrder from './components/CancelOrder/CancelOrder';
 
 function App() {
   const history = useHistory();
@@ -19,7 +20,10 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-        <Route path="/order">
+          <Route path="/cancel">
+            <CancelOrder />
+          </Route>
+          <Route path="/order">
             <OrderPizza />
           </Route>
           <Route path="/">
